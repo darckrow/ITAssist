@@ -60,6 +60,8 @@ const ChamadoFormScreen = ({ navigation }) => {
         multiline
       />
       <CustomButton title="Abrir Chamado" onPress={handleSubmit} />
+
+      <CustomButton title="Chamados" onPress={() => navigation.navigate('Acompanhamento')} />
     </View>
   );
 };
@@ -70,7 +72,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: 20,
     alignItems: 'center',
-    backgroundColor: '#1D3139',
+    backgroundColor: '#f0f0f0',
   },
   input: {
     marginBottom: 10,
